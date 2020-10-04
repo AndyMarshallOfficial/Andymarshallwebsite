@@ -47,6 +47,11 @@
 .w3-myfont {
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
+        #demo {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+}
 
     </style>
 </head>
@@ -119,7 +124,51 @@
                 
                     <h2 style='font-family: Times New Roman; color:#d2691e'>CURRENT AFFAIRS</h2>
                     
-                        <h4 style='font-family:Courier New; color:#E6BE8A'>Presently, I am working on Programming Skills .... That's all you need to know !!! <br>Becasue, I believe, if we disclose something before it is done, then that thing doesn't happen.</h4>
+                        <h4 style='font-family:Courier New; color:#E6BE8A'>I have few things to do, before I my engineering years get over. 
+                            <br>So, how my future will turn out will be know after <br> 
+                            <p id="demo"></p>
+                            <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+                            <br>
+                            So, the list goes as below:
+                <ul>
+                    <li>Build a personal website</li>
+                    <li>Build a social nerworking website and app</li>
+                    <li>Build a game</li>
+                    <li>Build a new AI based OS with a new kind of programming software installed in a new kind of device that can store huge data.</li>
+                    <li>Date a girl</li>
+                    <li>Build a nice physic</li>
+                    <li>Build able to hack any kind of system or device</li>
+                </ul>
+                        </h4>
                 
             </center></p>
         </div>
